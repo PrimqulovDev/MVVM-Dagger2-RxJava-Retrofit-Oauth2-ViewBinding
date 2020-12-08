@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center|bottom"
+    android:background="@color/colorMainBg"
+    android:gravity="bottom"
+    android:orientation="horizontal"
+    android:paddingBottom="32dp"
+    tools:viewBindingIgnore="true">
+
+    <ilyos.app.examplemvvm.utils.custom_views.CustomButton
+        android:id="@+id/buttonSignUp"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="12dp"
+        android:layout_weight="1"
+        android:backgroundTint="#9B9B9B"
+        android:text="@string/sign_up"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <ilyos.app.examplemvvm.utils.custom_views.CustomButton
+        android:id="@+id/buttonSignIn"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="24dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/colorButtonInactive"
+        android:text="@string/login"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

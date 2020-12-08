@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMainBg">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        app:cardBackgroundColor="#2A2A2A"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ilyos.app.examplemvvm.utils.custom_views.CustomButton
+            android:id="@+id/btnSignInUp"
+            style="?borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#2A2A2A"
+            android:backgroundTint="#2A2A2A"
+            android:foreground="@drawable/bg_ripple_light_0"
+            android:text="Sign in/Sign up"
+            android:textAllCaps="false"
+            android:textColor="@color/colorRed"
+            android:textSize="16sp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

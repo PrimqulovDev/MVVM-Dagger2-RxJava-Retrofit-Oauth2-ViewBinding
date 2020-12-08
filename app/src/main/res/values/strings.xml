@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Example MVVM</string>
+    <string name="back_again">Click again to exit</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign up</string>
+    <string name="change_profile_photo">Change profile photo</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="continue_as_guest">Continue as Guest</string>
+    <string name="image">Image</string>
+    <string name="create_account">Create account</string>
+    <string name="forgot_password_title">Forgot password</string>
+    <string name="forgot_password_hint">Please enter your email address. We will\nsend you a link to reset password.</string>
+    <string name="help_center">Need some help? Go to <![CDATA[<b><font color=#007AFF>help center.</font></b>]]></string>
+
+    <string name="emailValidationError">Email should be like example@company.com</string>
+    <string name="passwordValidationError">Password must have at least 6 letters and contain at least 1 digit, 1 letter in lowercase, 1 letter in uppercase.</string>
+
+</resources>
