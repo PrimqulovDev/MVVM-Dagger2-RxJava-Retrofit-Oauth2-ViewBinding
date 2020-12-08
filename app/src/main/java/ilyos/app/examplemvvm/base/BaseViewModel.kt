@@ -12,6 +12,10 @@ import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.observers.DisposableSingleObserver
 import javax.inject.Inject
 
+/**
+ * Developed by Ilyos
+ */
+
 open class BaseViewModel @Inject constructor() : ViewModel() {
 
     @LayoutRes

@@ -22,7 +22,7 @@
             android:background="#2A2A2A"
             android:backgroundTint="#2A2A2A"
             android:foreground="@drawable/bg_ripple_light_0"
-            android:text="Sign in/Sign up"
+            android:text="@string/sign_in_sign_up"
             android:textAllCaps="false"
             android:textColor="@color/colorRed"
             android:textSize="16sp" />

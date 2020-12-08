@@ -15,9 +15,7 @@ class AuthenticationInterceptor(private val sharedManagerUtil: SharedManager) : 
     @Throws(IOException::class)
     override fun intercept(chain: Interceptor.Chain): Response {
         val original = chain.request()
-
         val authToken = sharedManagerUtil.getOauthToken()
-
         val reqBuilder = requestBuild(
             original, Credentials.basic(BuildConfig.CLIENT_ID, BuildConfig.CLIENT_SECRET)
         )

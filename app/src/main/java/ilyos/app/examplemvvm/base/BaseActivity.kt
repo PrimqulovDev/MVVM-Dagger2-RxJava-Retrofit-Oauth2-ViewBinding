@@ -3,14 +3,17 @@ package ilyos.app.examplemvvm.base
 import android.os.Bundle
 import android.os.Handler
 import android.widget.Toast
+import androidx.activity.viewModels
 import androidx.annotation.IdRes
 import androidx.annotation.LayoutRes
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.ViewModelProviders
 import dagger.android.support.DaggerAppCompatActivity
 import ilyos.app.examplemvvm.R
 import ilyos.app.examplemvvm.utils.extensions.logd
 
+/**
+ * Developed by Ilyos
+ */
 
 abstract class BaseActivity(@LayoutRes private val layoutId: Int) : DaggerAppCompatActivity() {
 
@@ -44,12 +47,13 @@ fun AppCompatActivity.exitVariant() {
 }
 
 fun AppCompatActivity.setLayoutContainer(@IdRes resId: Int) {
-    ViewModelProviders.of(this)[BaseViewModel::class.java].parentLayoutId = resId
+    viewModels<BaseViewModel>().value.parentLayoutId = resId
+//    ViewModelProviders.of(this)[BaseViewModel::class.java].parentLayoutId = resId
 }
 
 fun AppCompatActivity.initialFragment(fragment: BaseFragment) {
     logd("Initial Fragment")
-    val containerId = ViewModelProviders.of(this)[BaseViewModel::class.java].parentLayoutId
+    val containerId = viewModels<BaseViewModel>().value.parentLayoutId
     supportFragmentManager.beginTransaction().add(containerId, fragment).commit()
 }
 

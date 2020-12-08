@@ -13,10 +13,8 @@ import javax.inject.Inject
 class MainActivity : BaseActivity(R.layout.activity_main) {
 
     override fun onActivityCreated() {
-        viewModel2.repository.show()
         setLayoutContainer(R.id.container)
         initialFragment(SplashScreen())
-
 
     }
 
@@ -24,8 +22,5 @@ class MainActivity : BaseActivity(R.layout.activity_main) {
     lateinit var sharedManager: SharedManager
     @Inject
     lateinit var viewModel: BaseViewModel
-
-    @Inject
-    lateinit var viewModel2: AuthViewModel
 }
 

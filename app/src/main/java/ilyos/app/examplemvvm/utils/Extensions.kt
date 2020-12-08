@@ -23,9 +23,6 @@ fun Context.toast(msg: String?, dur: Int = Toast.LENGTH_SHORT) {
 
 fun String.toDigits(): String = this.replace(Regex("[^\\d.]"), "")
 
-
-// Try to hide the keyboard and returns whether it worked
-
 fun View.hideKeyboard(): Boolean {
     try {
         val inputMethodManager =
@@ -41,8 +38,6 @@ val Int.dp: Int
 val Int.px: Int
     get() = (this * Resources.getSystem().displayMetrics.density).toInt()
 
-
-// Extension method to provide hide keyboard for [Fragment].
 
 fun Fragment.hideSoftKeyboard() {
     activity?.hideSoftKeyboard()
@@ -68,11 +63,11 @@ fun Fragment.logoInt(name: String): Int {
     var fileName = name
     if (fileName.endsWith(".png", true))
         fileName = name.dropLast(4)
-    var res = 0
-    try {
-        res = this.resources.getIdentifier(fileName, "drawable", this.context!!.packageName)
+    val res: Int
+    res = try {
+        this.resources.getIdentifier(fileName, "drawable", requireContext().packageName)
     } catch (ex: IllegalStateException) {
-        res = -1
+        -1
     }
     return res
 }

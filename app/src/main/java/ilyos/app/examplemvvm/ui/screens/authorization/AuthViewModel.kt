@@ -10,7 +10,7 @@ import io.reactivex.observers.DisposableSingleObserver
 import okhttp3.ResponseBody
 import javax.inject.Inject
 
-class AuthViewModel @Inject constructor(val repository: AuthRepository) : BaseViewModel() {
+class AuthViewModel @Inject constructor(private val repository: AuthRepository) : BaseViewModel() {
 
     val isSendResetLink = MutableLiveData<Boolean>()
     val createUser = MutableLiveData<Register>()

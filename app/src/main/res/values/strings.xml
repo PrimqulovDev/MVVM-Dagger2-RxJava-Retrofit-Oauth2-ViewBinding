@@ -20,5 +20,7 @@
 
     <string name="emailValidationError">Email should be like example@company.com</string>
     <string name="passwordValidationError">Password must have at least 6 letters and contain at least 1 digit, 1 letter in lowercase, 1 letter in uppercase.</string>
+    <string name="sign_in_sign_up">Sign in/Sign up</string>
+    <string name="send">Send</string>
 
 </resources>

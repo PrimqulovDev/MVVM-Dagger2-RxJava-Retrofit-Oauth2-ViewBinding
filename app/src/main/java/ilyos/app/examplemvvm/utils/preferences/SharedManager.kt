@@ -17,7 +17,6 @@ class SharedManager @Inject constructor(
     companion object {
         const val TOKEN = "TOKEN"
         const val USER_NAME = "USER_NAME"
-        const val CARD = "CARD"
         const val AUTH_TOKEN = "AUTH_TOKEN"
         const val ATTEMPT = "ATTEMPT"
 
@@ -71,7 +70,6 @@ class SharedManager @Inject constructor(
         preferences.getString(BASE_URL, prod) ?: prod
     }
 
-    fun clearCard() = preferences.edit().remove(CARD).apply()
     fun deleteAll() {
         preferences.edit().clear().apply()
     }

@@ -8,10 +8,13 @@ import android.view.ViewGroup
 import android.view.inputmethod.InputMethodManager
 import androidx.annotation.IdRes
 import androidx.annotation.LayoutRes
-import androidx.fragment.app.Fragment
 import androidx.fragment.app.commit
 import dagger.android.support.DaggerFragment
 import ilyos.app.examplemvvm.R
+
+/**
+ * Developed by Ilyos
+ */
 
 abstract class BaseFragment(@LayoutRes private val layoutId: Int) : DaggerFragment() {
 

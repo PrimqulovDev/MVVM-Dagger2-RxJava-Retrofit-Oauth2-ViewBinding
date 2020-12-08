@@ -11,7 +11,6 @@ Android app example
 *   MVVM with Android Architecture Components(Room, LiveData, ViewModel)
 *   Handle network status and network failures
 *   ConstraintLayout(guidelines, barriers... etc)
-*   ViewPager2
 *   Material design.
 
 

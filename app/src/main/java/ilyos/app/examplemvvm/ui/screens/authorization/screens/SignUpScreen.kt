@@ -25,12 +25,14 @@ class SignUpScreen : BaseFragment(R.layout.screen_sign_up) {
             appBar.imageBack.setOnClickListener { finishFragment() }
             buttonCreateAccount.setOnClickListener {
                 if (checkFields()) {
-                    viewModel.createUser(AuthServices.Register(
-                        firstName = inputFirstName.text.toString(),
-                        lastName = inputLastName.text.toString(),
-                        email = inputEmail.text.toString(),
-                        password = inputPassword.text.toString()
-                    ))
+                    viewModel.createUser(
+                        AuthServices.Register(
+                            firstName = inputFirstName.text.toString(),
+                            lastName = inputLastName.text.toString(),
+                            email = inputEmail.text.toString(),
+                            password = inputPassword.text.toString()
+                        )
+                    )
                 }
             }
 

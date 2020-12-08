@@ -1,9 +1,8 @@
 package ilyos.app.examplemvvm.repo
 
-import ilyos.app.examplemvvm.repo.remote.oauth2.OauthToken
 import ilyos.app.examplemvvm.repo.remote.AuthServices
+import ilyos.app.examplemvvm.repo.remote.oauth2.OauthToken
 import ilyos.app.examplemvvm.utils.Constants
-import ilyos.app.examplemvvm.utils.extensions.logd
 import ilyos.app.examplemvvm.utils.preferences.SharedManager
 import io.reactivex.Observable
 import io.reactivex.Single
@@ -50,8 +49,6 @@ class AuthRepository @Inject constructor(
 
     fun resendConfirmation(id: Int): Observable<Response<Void>> =
         authServices.resendConfirmation(id).observeOn(Schedulers.newThread()).observeOn(AndroidSchedulers.mainThread())
-
-    fun show() { logd("AuthRepository: Sign in", "SSSS") }
 
     private fun <T> Single<T>.observeAndSubscribe() =
         subscribeOn(Schedulers.newThread()).observeOn(AndroidSchedulers.mainThread())
