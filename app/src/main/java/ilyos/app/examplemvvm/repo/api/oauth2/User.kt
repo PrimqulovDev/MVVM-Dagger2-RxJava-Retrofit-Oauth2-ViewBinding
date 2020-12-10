@@ -1,4 +1,4 @@
-package ilyos.app.examplemvvm.repo.remote.oauth2
+package ilyos.app.examplemvvm.repo.api.oauth2
 
 import android.os.Parcel
 import android.os.Parcelable

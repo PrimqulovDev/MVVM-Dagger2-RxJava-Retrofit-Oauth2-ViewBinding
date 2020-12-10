@@ -1,4 +1,4 @@
-package ilyos.app.examplemvvm.repo.remote.oauth2
+package ilyos.app.examplemvvm.repo.api.oauth2
 
 import com.google.gson.annotations.SerializedName
 import java.io.Serializable

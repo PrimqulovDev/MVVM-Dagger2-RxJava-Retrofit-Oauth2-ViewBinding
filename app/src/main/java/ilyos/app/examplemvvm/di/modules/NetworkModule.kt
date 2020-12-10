@@ -7,8 +7,8 @@ import dagger.Module
 import dagger.Provides
 import ilyos.app.examplemvvm.App
 import ilyos.app.examplemvvm.BuildConfig
-import ilyos.app.examplemvvm.repo.remote.AuthServices
-import ilyos.app.examplemvvm.repo.remote.oauth2.AuthenticationInterceptor
+import ilyos.app.examplemvvm.repo.api.auth.AuthServices
+import ilyos.app.examplemvvm.repo.api.oauth2.AuthenticationInterceptor
 import ilyos.app.examplemvvm.utils.preferences.SharedManager
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit

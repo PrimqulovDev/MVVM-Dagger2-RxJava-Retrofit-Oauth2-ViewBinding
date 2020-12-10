@@ -1,7 +1,7 @@
 package ilyos.app.examplemvvm.repo
 
-import ilyos.app.examplemvvm.repo.remote.AuthServices
-import ilyos.app.examplemvvm.repo.remote.oauth2.OauthToken
+import ilyos.app.examplemvvm.repo.api.auth.AuthServices
+import ilyos.app.examplemvvm.repo.api.oauth2.OauthToken
 import ilyos.app.examplemvvm.utils.Constants
 import ilyos.app.examplemvvm.utils.preferences.SharedManager
 import io.reactivex.Observable

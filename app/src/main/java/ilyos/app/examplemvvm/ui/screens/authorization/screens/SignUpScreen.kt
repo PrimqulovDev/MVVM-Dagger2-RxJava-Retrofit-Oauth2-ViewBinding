@@ -4,7 +4,7 @@ import android.widget.EditText
 import ilyos.app.examplemvvm.R
 import ilyos.app.examplemvvm.base.BaseFragment
 import ilyos.app.examplemvvm.databinding.ScreenSignUpBinding
-import ilyos.app.examplemvvm.repo.remote.AuthServices
+import ilyos.app.examplemvvm.repo.api.auth.AuthServices
 import ilyos.app.examplemvvm.ui.screens.authorization.AuthViewModel
 import ilyos.app.examplemvvm.utils.extensions.isValidForEmail
 import ilyos.app.examplemvvm.utils.extensions.isValidForPassword

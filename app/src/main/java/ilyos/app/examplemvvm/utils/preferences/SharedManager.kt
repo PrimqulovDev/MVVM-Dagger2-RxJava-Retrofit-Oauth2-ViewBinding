@@ -3,9 +3,9 @@ package ilyos.app.examplemvvm.utils.preferences
 import android.content.SharedPreferences
 import androidx.core.content.edit
 import com.google.gson.Gson
-import ilyos.app.examplemvvm.repo.remote.AuthServices.Register
+import ilyos.app.examplemvvm.repo.api.auth.AuthServices.Register
 import com.google.gson.reflect.TypeToken
-import ilyos.app.examplemvvm.repo.remote.oauth2.OauthToken
+import ilyos.app.examplemvvm.repo.api.oauth2.OauthToken
 import ilyos.app.examplemvvm.BuildConfig
 import ilyos.app.examplemvvm.BuildConfig.BASE_URL
 import javax.inject.Inject

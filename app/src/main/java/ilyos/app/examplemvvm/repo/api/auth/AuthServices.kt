@@ -1,6 +1,6 @@
-package ilyos.app.examplemvvm.repo.remote
+package ilyos.app.examplemvvm.repo.api.auth
 
-import ilyos.app.examplemvvm.repo.remote.oauth2.OauthToken
+import ilyos.app.examplemvvm.repo.api.oauth2.OauthToken
 import io.reactivex.Observable
 import io.reactivex.Single
 import okhttp3.RequestBody

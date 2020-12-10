@@ -3,8 +3,8 @@ package ilyos.app.examplemvvm.ui.screens.authorization
 import androidx.lifecycle.MutableLiveData
 import ilyos.app.examplemvvm.base.BaseViewModel
 import ilyos.app.examplemvvm.repo.AuthRepository
-import ilyos.app.examplemvvm.repo.remote.AuthServices.Register
-import ilyos.app.examplemvvm.repo.remote.oauth2.OauthToken
+import ilyos.app.examplemvvm.repo.api.auth.AuthServices.Register
+import ilyos.app.examplemvvm.repo.api.oauth2.OauthToken
 import ilyos.app.examplemvvm.utils.Errors
 import io.reactivex.observers.DisposableSingleObserver
 import okhttp3.ResponseBody

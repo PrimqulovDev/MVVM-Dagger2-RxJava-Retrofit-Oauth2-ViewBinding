@@ -5,7 +5,7 @@ import androidx.annotation.LayoutRes
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import ilyos.app.examplemvvm.repo.AuthRepository
-import ilyos.app.examplemvvm.repo.remote.oauth2.OauthToken
+import ilyos.app.examplemvvm.repo.api.oauth2.OauthToken
 import ilyos.app.examplemvvm.utils.Errors
 import ilyos.app.examplemvvm.utils.preferences.SharedManager
 import io.reactivex.disposables.CompositeDisposable
